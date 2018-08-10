@@ -42,31 +42,28 @@
 		<!-- Page Content -->
 		<div class="content">
 			<!-- Loading the home content -->
-			<br>
-			<br>
-			<br>
+			
 			<c:if test="${ userClickHome == true }">
 				<%@include file="home.jsp"%>
 			</c:if>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
 			<c:if test="${ userClickAbout == true }">
 				<%@include file="about.jsp"%>
 			</c:if>
-			<br>
-			<br>
-			<br>
+			
 			<c:if test="${ userClickContact == true }">
 				<%@include file="contact.jsp"%>
+			</c:if>
+			
+			<c:if test="${userClicksAllProducts == true or userClicksCatagoryProducts == true }">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 		</div>
 
 		<!-- Footer comes Here -->
-		<%@include file="./shared/footer.jsp"%>
+		<c:if test="${ userClickHome == true }">
+				<%@include file="./shared/footer.jsp"%>
+			</c:if>
+		<%-- <%@include file="./shared/footer.jsp"%> --%>
 
 
 		<!-- Bootstrap core JavaScript -->

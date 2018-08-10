@@ -15,6 +15,7 @@
 
 
 	<context:component-scan base-package="net.rjt.onlineshopping.controller" />
+	<context:component-scan base-package="net.rjt.shoppingbackend.daoimpl" />
 
 
 	<bean id="viewResolver"

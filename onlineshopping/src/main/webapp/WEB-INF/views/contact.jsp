@@ -1,9 +1,9 @@
 <div class="container">
 
-	<div class="row">	
+	<div>	
 		
 		<h1>Contact Us</h1>
-		<hr/>
+		<hr/><br>
 		<p>This is an contact us page</p>	
 	
 	</div>
